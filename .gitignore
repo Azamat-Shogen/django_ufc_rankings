@@ -1,2 +1,4 @@
 venv
-/app/.vscode
+app/.vscode
+app/.env
+app/ufc/__pycache__
