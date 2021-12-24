@@ -2,9 +2,11 @@ import os
 import json
 from django.conf import settings
 from athletes.models import Weightclass, Athlete
+from athletes.serializers import WeightclassSerializer
 
 
 file_path = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_data.json')
+default_image_src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxD4o2sWDv53TYcVsOpMoRLuzZn1-1pA7iA&usqp=CAU"
 
 
 #TODO: load json file to a list of dict
@@ -37,6 +39,27 @@ def run():
 
     for el in data:
         Weightclass.objects.create(weight_class=el['weight_class'])
-  
+
+    weightclasses = Weightclass.objects.all()
+    weight_class_list = [(w.weight_class, w.id) for w in weightclasses]
+
+    print(weight_class_list)
+
+    for el in data:
+        weight_class_id = list(filter(lambda x: x[0] == el['weight_class'], weight_class_list))[0][1]
+        
+        # for figther in el['fighters']:
+        #     if figther['img_src'] == "#":
+        #         figther['img_src'] = default_image_src
+        #     Athlete.objects.create(
+        #         athlete_name=figther['athlete_name'],
+        #         rank=figther['rank'],
+        #         image_src=figther['img_src'],
+        #         champion=figther['champion'],
+        #         record=figther['record'],
+        #         nickname=figther['nickname'],
+        #         weight_class=weight_class_id
+        #     )
+
 
 run()

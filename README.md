@@ -1,7 +1,7 @@
 # UFC Rankings Api
 
 About:
-UFC rankins api server using django and postgres on the backend and React on the frontend
+UFC rankings api server using django and postgres on the backend and React on the frontend
 The app uses BeautifulSoup to extract the data from the official ufc website and loads the data initially into the tables.
 
 ufc_rankings_client 👉 ...
@@ -48,7 +48,7 @@ ufc_rankings_client 👉 ...
 ## Endpoints:
             1) [GET, POST]    http://127.0.0.1:8000/api/weightclasses 
             2) [DELETE, GET]  http://127.0.0.1:8000/api/weightclasses/<int:pk> 
-            3) [PUT]          http://127.0.0.1:8000/api/weightclasses/<int:pk>/ 
+            3) [PUT]          http://127.0.0.1:8000/api/weightclasses/<int:pk>
             ___________________________________________________________________
             4) ... not ready yet
 

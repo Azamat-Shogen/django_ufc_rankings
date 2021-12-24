@@ -14,3 +14,4 @@ class AthleteSerializer(serializers.ModelSerializer):
         model = Athlete
         fields = ('id', 'athlete_name', 'rank', 
         'image_src', 'champion', 'record', 'nickname', 'weight_class_id')
+
