@@ -1,33 +1,44 @@
 # UFC Rankings Api
 
-##### The app uses BeautifulSoup to extract the data from the official ufc website and saves it to a json file
+About:
+UFC rankins api server using django and postgres on the backend and React on the frontend
+The app uses BeautifulSoup to extract the data from the official ufc website and loads the data initially into the tables.
+
+ufc_rankings_client 👉 ...
  
 ## Steps:
-#### 1) create a virtual environment inside your folder, and activate it
+#### 1. Create a virtual environment inside your folder, and activate it
         run the command: python -m venv venv
         to activate, run: . venv/Scripts/activate
         
-### 2) update pip version
-        run the command: python -m pip install --upgrade pip==21.1.2    
-### 3) cd into the main 'app' folder and install the packages
-       run the command: python -m pip install -r requirements.txt
+#### 2. Update pip version
+        python -m pip install --upgrade pip==21.1.2    
 
-### 4) use docker compose to bring the containers up (in detached mode)
-       run the command: docker compose up -d
+#### 3. cd into the main 'app' folder and install the packages
+        python -m pip install -r requirements.txt
+
+#### 4. use docker compose to bring the containers up (in detached mode)
+        docker compose up -d
 
 #### The django web app will fail initially, since there is no DB connection. Proceed to step 5.
 
-### 5) inside pgAdmin (in the browser) create a server
-       for server name enter: ufc (or any) , for connection Host name' enter: pg , 
-       for password - xxxxxx (your password in docker-compose.yml)
+#### 5. Inside pgAdmin (in the browser) create a server
+        for server name enter: ufc (or any) , for connection Host name' enter: pg , 
+        for password - xxxxxx (your password in docker-compose.yml)
 
-### 6) Restart ( or stop and start django web app container)
-       run: docker restart <ContainerID>
-       or run: docker stop <ContainerID>  and after run: docker start <ContainerID>
+#### 6. Restart ( or stop and start django web app container)
+        run: docker restart <ContainerID>
+        or run: docker stop <ContainerID>  
+        and after run: docker start <ContainerID>
 
-### 7) create migrations to load the tables, and apply migrations:
-       run: docker compose exec web python manage.py makemigrations --noinput
-       run: docker compose exec web python manage.py migrate --noinput
+#### 7. Create migrations to load the tables, and apply migrations: 
+        docker compose exec web python manage.py makemigrations --noinput
+       
+#### 8. Run migrations:
+        docker compose exec web python manage.py migrate --noinput
+
+#### 9. Load the data from json file into the tables:
+        docker compose exec web python manage.py runscript seed
 
 
 

@@ -88,3 +88,5 @@ for el in content[:-1]:
 # Todo: save the data to a json file for later imports
 with open('ufc_data.json', 'w') as f:
     json.dump(ufc_data, f, indent=4)
+
+
