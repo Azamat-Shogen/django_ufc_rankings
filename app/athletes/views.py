@@ -8,9 +8,11 @@ from athletes.models import Weightclass, Athlete
 from athletes.serializers import WeightclassSerializer, AthleteSerializer
 from rest_framework.decorators import api_view
 
+from django.core.files.storage import default_storage
+
 # Create your views here.
 
-# @csrf_exempt
+@csrf_exempt
 @api_view(['GET', 'POST'])
 def weightclasses_Api(request):
     if request.method == 'GET':
@@ -27,7 +29,7 @@ def weightclasses_Api(request):
         return JsonResponse({"massage": "Failed to add"}, safe=False)
 
 
-# @csrf_exempt
+@csrf_exempt
 @api_view(['PUT', 'GET', 'DELETE'])
 def weight_class_detail(request, pk):
     try:
@@ -53,6 +55,7 @@ def weight_class_detail(request, pk):
 
 # TODO: ATHLETES APIS
 
+@csrf_exempt
 @api_view(['GET', 'POST'])
 def athlete_Api(request):
     if request.method == 'GET':
@@ -70,6 +73,7 @@ def athlete_Api(request):
         return JsonResponse({"massage": "Failed to add a fighter"}, safe=False)
 
 
+@csrf_exempt
 @api_view(['PUT', 'GET', 'DELETE'])
 def athlete_datail(request, pk):
     try:
@@ -94,7 +98,12 @@ def athlete_datail(request, pk):
 
 
 
+@csrf_exempt
+def SaveFile(request):
+    file = request.FILES['myFile']
+    file_name = default_storage.save(file.name, file)
 
+    return JsonResponse(file_name, safe=False)
 
 
 
