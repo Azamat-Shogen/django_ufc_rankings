@@ -24,9 +24,9 @@ for el in data:
     if el['weight_class'] == "Pound-for-Pound Top Rank":
         count += 1
         if count == 1:
-            el['weight_class'] = "Men's Pound-for-Pound Top Rank"
+            el['weight_class'] = "Men's Pound-for-Pound"
         if count == 2:
-            el['weight_class'] = "Women's Pound-for-Pound Top Rank"
+            el['weight_class'] = "Women's Pound-for-Pound"
     if count == 2:
         break
 
@@ -49,7 +49,7 @@ def run():
         weight_class_id = list(filter(lambda x: x[0] == el['weight_class'], weight_class_list))[0][1]
 
         print('weightclass id is: ', weight_class_id)
-        print(type(weight_class_id))
+        print("_" * 60)
 
         weight_class_obj = Weightclass.objects.only('id').get(id=weight_class_id)
         
