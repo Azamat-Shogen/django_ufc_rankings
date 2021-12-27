@@ -1,7 +1,7 @@
 from django.db import models
 
 
-default_image_src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxD4o2sWDv53TYcVsOpMoRLuzZn1-1pA7iA&usqp=CAU"
+default_image_src = "https://training.speedupcenter.com/img/avater.png"
 
 # Create your models here.
 class Weightclass(models.Model):

@@ -13,6 +13,11 @@ from django.core.files.storage import default_storage
 # Create your views here.
 
 @csrf_exempt
+def main_page(request):
+    return render(request, 'home/home.html', {})
+
+
+@csrf_exempt
 @api_view(['GET', 'POST'])
 def weightclasses_Api(request):
     if request.method == 'GET':
