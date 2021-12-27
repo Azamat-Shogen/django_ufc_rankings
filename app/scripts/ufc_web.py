@@ -3,11 +3,12 @@ import requests
 import json
 
 
+
 """ Web scraping with Beautifulsoup to get the data and save as Json file """
 
 url = 'https://www.ufc.com/rankings'
 data = requests.get(url)
-default_image_srs = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxD4o2sWDv53TYcVsOpMoRLuzZn1-1pA7iA&usqp=CAU"
+default_image_src = "https://training.speedupcenter.com/img/avater.png"
 
 html = BeautifulSoup(data.text, 'html.parser')
 content = html.select('.view-grouping')
@@ -63,7 +64,7 @@ for el in content[:-1]:
         fighter_nickname = None
         fighter_record = soup3.select('.tz-change-inner')[0].get_text()
         fighter_record = fighter_record[fighter_record.index("•") + 1:].strip()
-        fighter_img_src = "#"
+        fighter_img_src = default_image_src
 
         try:
             fighter_nickname = soup3.select('.field-name-nickname')[0].get_text()
@@ -82,11 +83,10 @@ for el in content[:-1]:
 
     ufc_data.append(temp_dict)
 
-
-# new_ufc_data = json.dumps(ufc_data, indent=4)
-
 # Todo: save the data to a json file for later imports
 with open('ufc_data.json', 'w') as f:
     json.dump(ufc_data, f, indent=4)
+
+""" run: python ufc_web.py to generate a new updated file, and replace it to the static folder in the scripts directory"""
 
 

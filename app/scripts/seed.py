@@ -6,8 +6,6 @@ from athletes.serializers import WeightclassSerializer
 
 
 file_path = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_data.json')
-default_image_src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxD4o2sWDv53TYcVsOpMoRLuzZn1-1pA7iA&usqp=CAU"
-
 
 #TODO: load json file to a list of dict
 # with open('static/ufc_data.json') as f:
@@ -54,8 +52,7 @@ def run():
         weight_class_obj = Weightclass.objects.only('id').get(id=weight_class_id)
         
         for figther in el['fighters']:
-            if figther['img_src'] == "#":
-                figther['img_src'] = default_image_src
+        
             Athlete.objects.create(
                 athlete_name=figther['athlete_name'],
                 rank=figther['rank'],
