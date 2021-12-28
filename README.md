@@ -7,7 +7,7 @@ The app uses BeautifulSoup to extract the data from the official ufc website and
 ufc_rankings_client 👉 https://github.com/Azamat-Shogen/ufc_rankings_client
  
 ## Steps:
-###### (the commands for running locally )
+###### (.....)
 #### 1. Create a virtual environment inside your folder, and activate it
         run the command: python -m venv venv
         to activate, run: . venv/Scripts/activate
