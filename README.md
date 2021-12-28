@@ -7,18 +7,19 @@ The app uses BeautifulSoup to extract the data from the official ufc website and
 ufc_rankings_client 👉 https://github.com/Azamat-Shogen/ufc_rankings_client
  
 ## Steps:
+###### (the commands for running locally )
 #### 1. Create a virtual environment inside your folder, and activate it
         run the command: python -m venv venv
         to activate, run: . venv/Scripts/activate
         
 #### 2. Update pip version
-python -m pip install --upgrade pip==21.1.2    
+        python -m pip install --upgrade pip==21.1.2    
 
 #### 3. cd into the main 'app' folder and install the packages
-python -m pip install -r requirements.txt
+        python -m pip install -r requirements.txt
 
 #### 4. use docker compose to bring the containers up (in detached mode)
-docker compose up -d
+        docker compose up -d
 
 #### The django web app will fail initially, since there is no DB connection. Proceed to step 5.
 
@@ -32,18 +33,18 @@ docker compose up -d
         and after run: docker start <ContainerID>
 
 #### 7. Create migrations to load the tables, and apply migrations: 
-docker compose exec web python manage.py makemigrations --noinput
+        docker compose exec web python manage.py makemigrations --noinput
        
 #### 8. Run migrations:
-docker compose exec web python manage.py migrate --noinput
+       docker compose exec web python manage.py migrate --noinput
 
 #### 9. Load the data from json file into the tables:
-docker compose exec web python manage.py runscript seed
+       docker compose exec web python manage.py runscript seed
 
 
 
 ### Closing the app - Stop and remove the containers with the command:
-docker compose down --rmi all
+    docker compose down --rmi all
 
 ## Endpoints:
             1) [GET, POST]         http://127.0.0.1:8000/api/weightclasses 
