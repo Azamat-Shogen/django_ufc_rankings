@@ -1,5 +1,8 @@
 DROP DATABASE IF EXISTS ufc_rankings_db;
+DROP TABLE IF EXISTS athletes_athlete;
+DROP TABLE IF EXISTS athletes_weightclass;
 CREATE DATABASE ufc_rankings_db;
+
 
 \c ufc_rankings_db
 

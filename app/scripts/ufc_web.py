@@ -84,7 +84,7 @@ for el in content[:-1]:
     ufc_data.append(temp_dict)
 
 # Todo: save the data to a json file for later imports
-with open('ufc_data.json', 'w') as f:
+with open('./static/ufc_data.json', 'w') as f:
     json.dump(ufc_data, f, indent=4)
 
 """ run: python ufc_web.py to generate a new updated file, and replace it to the static folder in the scripts directory"""
