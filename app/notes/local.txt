@@ -1,0 +1,49 @@
+STEPS TO FOLLOW: 
+___________________________________________________________________
+
+1. rename the docker-compose-local.yml file to docker-compose.yml
+
+2. Create a virtual environment inside your folder, and activate it
+        python -m venv venv
+        . venv/Scripts/activate
+
+3. Update pip version
+        python -m pip install --upgrade pip==21.1.2
+
+4. cd into the main 'app' folder and install the packages
+        python -m pip install -r requirements.txt
+
+5. use docker compose to bring the containers up (in detached mode)
+        docker compose up -d
+
+The django web app will fail initially, since there is no DB connection. Proceed to step 6.
+
+6. Inside pgAdmin (in the browser) create a server
+        for server name enter: ufc (or any)  
+        for connection Host name' enter: pg 
+        for password - (your password in docker-compose.yml)
+
+7. Restart ( or stop and start django web app container)
+        docker ps  (to list the containers)
+        docker restart <ContainerID>
+        docker stop <ContainerID> 
+        docker start <ContainerID>      
+            
+8. Create migrations to load the tables, and apply migrations:
+        docker compose exec web python manage.py makemigrations --noinput
+
+9. Run migrations:
+        docker compose exec web python manage.py migrate --noinput
+
+10. Load the data from json file into the tables:
+        docker compose exec web python manage.py runscript seed
+
+11. Closing the app - Stop and remove the containers with the command:
+        docker compose down --rmi all
+
+___________ENDPOINTS____________
+1) [GET, POST]         http://127.0.0.1:8000/api/weightclasses 
+2) [DELETE, GET, PUT]  http://127.0.0.1:8000/api/weightclasses/<int:pk> 
+___________________________________________________________________
+3) [GET, POST]         http://127.0.0.1:8000/api/athletes
+4) [DELETE, GET, PUT]  http://127.0.0.1:8000/api/athletes/<int:pk> 
