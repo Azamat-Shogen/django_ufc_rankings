@@ -1,1 +1,76 @@
 Live server 🚀: http://ec2-3-18-183-239.us-east-2.compute.amazonaws.com:8000/
+
+STEPS:
+
+1. Rename the docker-compose-remote.yml file to docker-compose.yml
+
+2. Connect to your EC2 server via SSH (Secure SHell)
+   Open a bash terminal to the same location on your computer where you saved your private key file <ufc_django_docker.pem>
+   ssh -i <your private key filename> ubuntu@<your EC2 instance Elastic IP address>
+
+    ssh -i ufc_django_docker.pem ubuntu@3.18.183.239
+
+3. IN THE SSH SESSION, check docker ps -a then stop and remove any running containers.
+   This means to run docker ps -a at the command prompt that is opened when you have started an SSH session
+   cd ~
+
+4. cd into django_ufc folder and 'GIT PULL' all the changes:
+
+   git pull 
+
+5. Stop the server and remove the containers with the command:
+   
+   docker-compose down --rmi all
+
+6. Use docker-compose to bring the containers up in detached mode
+   
+   docker-compose up -d
+
+7. Make, apply the migrations inside the Docker container and run the script file to insert values into the tables:
+   
+    docker-compose exec web python manage.py makemigrations --noinput
+    docker-compose exec web python manage.py migrate --noinput
+    docker-compose exec web python manage.py runscript seed
+
+8. Retrieve an authentication token and authenticate your Docker client to your registry:
+
+   aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 904425387266.dkr.ecr.us-east-2.amazonaws.com
+
+9. push to ECR 
+   docker-compose push
+
+
+________________________docker-compose-yml____________________________________________________________
+version: "3.8"
+services:
+  web:
+    build: ./app
+    image: 904425387266.dkr.ecr.us-east-2.amazonaws.com/ufc_docker_aws:ufc_docker_aws_web
+    command: gunicorn ufc.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./app/:/usr/src/app/
+      - static_volume:/usr/src/app/static
+    expose:
+      - 8000
+    environment:
+      - DB_NAME=ufc_rankings_db
+      - DB_USER=postgres
+      - DB_PASSWORD=admin123
+      - DB_HOST=ufc.ctj8rhrpn1nh.us-east-2.rds.amazonaws.com
+      - DB_PORT=5432
+      - DATABASE=postgres
+      - VIRTUAL_HOST=ec2-3-18-183-239.us-east-2.compute.amazonaws.com
+      - VIRTUAL_PORT=8000
+  nginx:
+    build: ./nginx
+    image: 904425387266.dkr.ecr.us-east-2.amazonaws.com/ufc_docker_aws:ufc_docker_aws_nginx
+    volumes:
+      - static_volume:/usr/src/app/static
+    ports:
+      - 8000:80
+    depends_on:
+      - web
+volumes:
+  static_volume:
+
+_______________________________________________________________________________________________________
