@@ -80,7 +80,7 @@ def rankings_athlete_Api(request):
 
 @csrf_exempt
 @api_view(['PUT', 'GET', 'DELETE'])
-def rankings_athlete_datail(request, pk):
+def rankings_athlete_detail(request, pk):
     try:
         athlete = RankingsAthlete.objects.get(pk=pk)
     except RankingsAthlete.DoesNotExist:
