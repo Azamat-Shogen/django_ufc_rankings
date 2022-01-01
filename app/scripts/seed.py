@@ -5,7 +5,7 @@ from athletes.models import Weightclass, Athlete
 from athletes.serializers import WeightclassSerializer
 
 
-file_path = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_data.json')
+file_path = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_rankings.json')
 
 #TODO: load json file to a list of dict
 # with open('static/ufc_data.json') as f:
@@ -41,13 +41,8 @@ def run():
     weightclasses = Weightclass.objects.all()
     weight_class_list = [(w.weight_class, w.id) for w in weightclasses]
 
-    # print(weight_class_list)
-
     for el in data:
         weight_class_id = list(filter(lambda x: x[0] == el['weight_class'], weight_class_list))[0][1]
-
-        print('weightclass id is: ', weight_class_id)
-        print("_" * 60)
 
         weight_class_obj = Weightclass.objects.only('id').get(id=weight_class_id)
         
@@ -62,5 +57,7 @@ def run():
                 nickname=figther['nickname'],
                 weight_class=weight_class_obj
             )
+
+
 
 run()

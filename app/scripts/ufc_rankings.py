@@ -43,16 +43,18 @@ for el in content[:-1]:
         champ_nickname = soup2.select('.field-name-nickname')[0].get_text()
         champ_nickname = champ_nickname[1:-1]
     except:
-        print('nickname not found')
+        print('nickname not found, value=None')
 
     temp_dict['fighters'].append({'athlete_name': champion,
-                                  'rank': 0, 'img_src': champ_img_src,
+                                  'rank': 0,
+                                  'img_src': champ_img_src,
                                   'champion': True,
-
-                                  'record': champ_record, 'nickname': champ_nickname})
+                                  'record': champ_record,
+                                  'nickname': champ_nickname})
 
     # Todo:  fighters
     table_tr = table[0].select('tr')
+
     for tr in list(table_tr): 
         fighter_rank_string = tr.select('td.views-field-weight-class-rank')[0].get_text()
         fighter_rank = [int(s) for s in fighter_rank_string.split() if s.isdigit()][0]
@@ -70,7 +72,7 @@ for el in content[:-1]:
             fighter_nickname = soup3.select('.field-name-nickname')[0].get_text()
             fighter_nickname = fighter_nickname[1:-1]
         except:
-            print('nickname not found')
+            print('nickname not found, value=None')
 
         temp_dict['fighters'].append({'athlete_name': fighter_name,
                                       'rank': fighter_rank,
@@ -79,14 +81,13 @@ for el in content[:-1]:
                                       'record': fighter_record,
                                       'nickname': fighter_nickname})
 
-    print("*" * 50)
-
     ufc_data.append(temp_dict)
 
 # Todo: save the data to a json file for later imports
-with open('./static/ufc_data.json', 'w') as f:
+with open('./static/ufc_rankings.json', 'w') as f:
     json.dump(ufc_data, f, indent=4)
 
-""" run: python ufc_web.py to generate a new updated file, and replace it to the static folder in the scripts directory"""
+"""run: python ufc_rankings.py to generate a new updated file, and replace it to the static folder in the scripts 
+directory """
 
 
