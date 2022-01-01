@@ -34,7 +34,7 @@ for el in rankings_data:
 # TODO: initially insert all the data into the tables
 def run():
     # Optional
-    RankingsAthlete.objects.all().delete()
+    # RankingsAthlete.objects.all().delete()
     Athlete.objects.all().delete()
     Weightclass.objects.all().delete()
 
