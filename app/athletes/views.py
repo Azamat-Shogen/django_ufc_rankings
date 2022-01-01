@@ -4,8 +4,8 @@ from rest_framework.parsers import JSONParser
 from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
 
-from athletes.models import Weightclass, RankingsAthlete
-from athletes.serializers import WeightclassSerializer, RankingsAthleteSerializer
+from athletes.models import Weightclass, Athlete
+from athletes.serializers import WeightclassSerializer, AthleteSerializer
 from rest_framework.decorators import api_view
 
 from django.core.files.storage import default_storage
@@ -64,13 +64,13 @@ def weight_class_detail(request, pk):
 @api_view(['GET', 'POST'])
 def rankings_athlete_Api(request):
     if request.method == 'GET':
-        athletes = RankingsAthlete.objects.all()
-        athletes_serializer = RankingsAthleteSerializer(athletes, many=True)
+        athletes = Athlete.objects.all()
+        athletes_serializer = AthleteSerializer(athletes, many=True)
         return JsonResponse(athletes_serializer.data, safe=False)
 
     elif request.method == 'POST':
         athlete_data = JSONParser().parse(request)
-        athlete_serializer = RankingsAthleteSerializer(data=athlete_data)
+        athlete_serializer = AthleteSerializer(data=athlete_data)
         if athlete_serializer.is_valid():
             athlete_serializer.save()
             return JsonResponse({"massage": "athlete added successfully"}, safe=False)
@@ -82,17 +82,17 @@ def rankings_athlete_Api(request):
 @api_view(['PUT', 'GET', 'DELETE'])
 def rankings_athlete_detail(request, pk):
     try:
-        athlete = RankingsAthlete.objects.get(pk=pk)
-    except RankingsAthlete.DoesNotExist:
+        athlete = Athlete.objects.get(pk=pk)
+    except Athlete.DoesNotExist:
         return JsonResponse({"message": "Athlete does not exist"}, status=status.HTTP_404_NOT_FOUND)
     
     if request.method == 'GET':
-        athlete_serializer = RankingsAthleteSerializer(athlete)
+        athlete_serializer = AthleteSerializer(athlete)
         return JsonResponse(athlete_serializer.data)
 
     elif request.method == 'PUT':
         athlete_data = JSONParser().parse(request)
-        athlete_serializer = RankingsAthleteSerializer(athlete, data=athlete_data)
+        athlete_serializer = AthleteSerializer(athlete, data=athlete_data)
         if athlete_serializer.is_valid():
             athlete_serializer.save()
             return JsonResponse(athlete_serializer.data)
