@@ -20,7 +20,7 @@
             {
                 "athlete_name": "Israel Adesanya",
                 "rank": 3,
-                "img_src": "https://dmxg5wxfqgb4u.cloudfront.net/styles/teaser/s3/2021-09/67233%252Fprofile-galery%252Fprofile-picture%252FVOLKANOVSKI_ALEXANDER_BELT_09-25.png?h=a30e7339&itok=gI1iX5Zn",
+                "img_src": "https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png",
                 "champion": false,
                 "record": "21-1-0 (W-L-D)",
                 "nickname": "The Last Stylebender"
@@ -1124,7 +1124,7 @@
             {
                 "athlete_name": "Shamil Abdurakhimov",
                 "rank": 8,
-                "img_src": "https://dmxg5wxfqgb4u.cloudfront.net/styles/teaser/s3/2021-09/71690%252Fprofile-galery%252Fprofile-picture%252FDAUKAUS_CHRIS_09-25.png?h=a30e7339&itok=gLkG9yxq",
+                "img_src": "https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png",
                 "champion": false,
                 "record": "20-6-0 (W-L-D)",
                 "nickname": "Abrek"

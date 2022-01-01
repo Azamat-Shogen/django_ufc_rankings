@@ -72,13 +72,14 @@ for el in content[:-1]:
         athlete_detail = \
             list(filter(lambda x: x['athlete_name'].lower() == fighter_name.lower(), all_athletes))
 
+
         if athlete_detail:
             print('--found-- ', athlete_detail[0]['athlete_name'])
             default_image_src = athlete_detail[0]['img_src']
         else:
             print("not found : default image is being applied")
-
-
+            default_image_src = "https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png"
+            
 
         try:
             fighter_nickname = soup3.select('.field-name-nickname')[0].get_text()
