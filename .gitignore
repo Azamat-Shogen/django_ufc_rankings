@@ -2,7 +2,7 @@ venv
 app/.vscode
 app/.env
 app/ufc/__pycache__
-app/users/migrations
-app/athletes/migrations
+#app/users/migrations
+#app/athletes/migrations
 .idea
 **/.env
