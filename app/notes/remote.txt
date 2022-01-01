@@ -14,7 +14,7 @@ STEPS:
    This means to run docker ps -a at the command prompt that is opened when you have started an SSH session
    cd ~
 
-4. cd into django_ufc folder and 'GIT PULL' all the changes:
+4. cd into django_ufc_rankings folder and 'GIT PULL' all the changes:
 
    git pull 
 
