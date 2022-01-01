@@ -1,7 +1,7 @@
 import os
 import json
 from django.conf import settings
-from athletes.models import Weightclass, RankingsAthlete
+from athletes.models import Weightclass, RankingsAthlete, Athlete
 
 file_path1 = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_rankings.json')
 # file_path2 = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_athletes_all.json')
@@ -34,8 +34,9 @@ for el in rankings_data:
 # TODO: initially insert all the data into the tables
 def run():
     # Optional
-    Weightclass.objects.all().delete()
     RankingsAthlete.objects.all().delete()
+    Athlete.objects.all().delete()
+    Weightclass.objects.all().delete()
 
     for el in rankings_data:
         Weightclass.objects.create(weight_class=el['weight_class'])
