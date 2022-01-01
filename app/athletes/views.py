@@ -4,8 +4,8 @@ from rest_framework.parsers import JSONParser
 from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
 
-from athletes.models import Weightclass, Athlete
-from athletes.serializers import WeightclassSerializer, AthleteSerializer
+from athletes.models import Weightclass, RankingsAthlete
+from athletes.serializers import WeightclassSerializer, RankingsAthleteSerializer
 from rest_framework.decorators import api_view
 
 from django.core.files.storage import default_storage
@@ -58,19 +58,19 @@ def weight_class_detail(request, pk):
         return JsonResponse({'message': 'Weight class deleted successfully!'}, status=status.HTTP_204_NO_CONTENT)
 
 
-# TODO: ATHLETES APIS
+# TODO: RANKINGS ATHLETES APIS
 
 @csrf_exempt
 @api_view(['GET', 'POST'])
-def athlete_Api(request):
+def rankings_athlete_Api(request):
     if request.method == 'GET':
-        athletes = Athlete.objects.all()
-        athletes_serializer = AthleteSerializer(athletes, many=True)
+        athletes = RankingsAthlete.objects.all()
+        athletes_serializer = RankingsAthleteSerializer(athletes, many=True)
         return JsonResponse(athletes_serializer.data, safe=False)
 
     elif request.method == 'POST':
         athlete_data = JSONParser().parse(request)
-        athlete_serializer = AthleteSerializer(data=athlete_data)
+        athlete_serializer = RankingsAthleteSerializer(data=athlete_data)
         if athlete_serializer.is_valid():
             athlete_serializer.save()
             return JsonResponse({"massage": "athlete added successfully"}, safe=False)
@@ -80,19 +80,19 @@ def athlete_Api(request):
 
 @csrf_exempt
 @api_view(['PUT', 'GET', 'DELETE'])
-def athlete_datail(request, pk):
+def rankings_athlete_datail(request, pk):
     try:
-        athlete = Athlete.objects.get(pk=pk)
-    except Athlete.DoesNotExist:
+        athlete = RankingsAthlete.objects.get(pk=pk)
+    except RankingsAthlete.DoesNotExist:
         return JsonResponse({"message": "Athlete does not exist"}, status=status.HTTP_404_NOT_FOUND)
     
     if request.method == 'GET':
-        athlete_serializer = AthleteSerializer(athlete)
+        athlete_serializer = RankingsAthleteSerializer(athlete)
         return JsonResponse(athlete_serializer.data)
 
     elif request.method == 'PUT':
         athlete_data = JSONParser().parse(request)
-        athlete_serializer = AthleteSerializer(athlete, data=athlete_data)
+        athlete_serializer = RankingsAthleteSerializer(athlete, data=athlete_data)
         if athlete_serializer.is_valid():
             athlete_serializer.save()
             return JsonResponse(athlete_serializer.data)
