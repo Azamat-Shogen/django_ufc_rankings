@@ -3,7 +3,6 @@ import json
 from django.conf import settings
 from athletes.models import Weightclass, RankingsAthlete
 
-
 file_path1 = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_rankings.json')
 # file_path2 = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_athletes_all.json')
 
@@ -48,9 +47,8 @@ def run():
         weight_class_id = list(filter(lambda x: x[0] == el['weight_class'], weight_class_list))[0][1]
 
         weight_class_obj = Weightclass.objects.only('id').get(id=weight_class_id)
-        
+
         for fighter in el['fighters']:
-        
             RankingsAthlete.objects.create(
                 athlete_name=fighter['athlete_name'],
                 rank=fighter['rank'],
@@ -60,7 +58,6 @@ def run():
                 nickname=fighter['nickname'],
                 weight_class=weight_class_obj
             )
-
 
 
 run()
