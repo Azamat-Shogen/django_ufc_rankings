@@ -8,8 +8,8 @@ urlpatterns = [
     path('', views.main_page, name='home'),
     path('api/weightclasses', views.weightclasses_Api),
     path('api/weightclasses/<int:pk>', views.weight_class_detail),
-    path('api/athletes', views.athlete_Api),
-    path('api/athletes/<int:pk>', views.athlete_datail),
+    path('api/rankings-athletes', views.rankings_athlete_Api),
+    path('api/rankings-athletes/<int:pk>', views.rankings_athlete_datail),
     # path('api/athletes/SaveFile', views.SaveFile)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

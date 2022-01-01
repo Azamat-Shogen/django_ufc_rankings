@@ -36,6 +36,7 @@ The django web app will fail initially, since there is no DB connection. Proceed
         docker start <ContainerID>      
             
 8. Create migrations to load the tables, and apply migrations:
+
         docker compose exec web python manage.py makemigrations --noinput
 
 9. Run migrations:

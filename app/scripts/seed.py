@@ -1,13 +1,12 @@
 import os
 import json
 from django.conf import settings
-from athletes.models import Weightclass, Athlete
-from athletes.serializers import WeightclassSerializer
+from athletes.models import Weightclass, RankingsAthlete
 
 
 file_path = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_rankings.json')
 
-#TODO: load json file to a list of dict
+# TODO: load json file to a list of dict
 # with open('static/ufc_data.json') as f:
 with open(file_path) as f:
     data = json.load(f)
@@ -33,7 +32,7 @@ for el in data:
 def run():
     # Optional
     Weightclass.objects.all().delete()
-    Athlete.objects.all().delete()
+    RankingsAthlete.objects.all().delete()
 
     for el in data:
         Weightclass.objects.create(weight_class=el['weight_class'])
@@ -46,15 +45,15 @@ def run():
 
         weight_class_obj = Weightclass.objects.only('id').get(id=weight_class_id)
         
-        for figther in el['fighters']:
+        for fighter in el['fighters']:
         
-            Athlete.objects.create(
-                athlete_name=figther['athlete_name'],
-                rank=figther['rank'],
-                image_src=figther['img_src'],
-                champion=figther['champion'],
-                record=figther['record'],
-                nickname=figther['nickname'],
+            RankingsAthlete.objects.create(
+                athlete_name=fighter['athlete_name'],
+                rank=fighter['rank'],
+                image_src=fighter['img_src'],
+                champion=fighter['champion'],
+                record=fighter['record'],
+                nickname=fighter['nickname'],
                 weight_class=weight_class_obj
             )
 

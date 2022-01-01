@@ -1,6 +1,6 @@
 from django.db import models
 from rest_framework import serializers
-from athletes.models import Athlete, Weightclass
+from athletes.models import RankingsAthlete, Weightclass
 
 
 class WeightclassSerializer(serializers.ModelSerializer):
@@ -9,9 +9,9 @@ class WeightclassSerializer(serializers.ModelSerializer):
         fields = ('id', 'weight_class')
 
 
-class AthleteSerializer(serializers.ModelSerializer):
+class RankingsAthleteSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Athlete
+        model = RankingsAthlete
         fields = ('id', 'athlete_name', 'rank', 
         'image_src', 'champion', 'record', 'nickname', 'weight_class')
 
