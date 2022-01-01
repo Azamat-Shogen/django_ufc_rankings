@@ -4,12 +4,16 @@ from django.conf import settings
 from athletes.models import Weightclass, RankingsAthlete
 
 
-file_path = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_rankings.json')
+file_path1 = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_rankings.json')
+# file_path2 = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_athletes_all.json')
 
 # TODO: load json file to a list of dict
 # with open('static/ufc_data.json') as f:
-with open(file_path) as f:
-    data = json.load(f)
+with open(file_path1) as f:
+    rankings_data = json.load(f)
+
+# with open(file_path2) as f2:
+#     all_athletes = json.load(f2)
 
 # TODO: there will be 2 identical weight classes as "Pound-for-Pound Top Rank"
 # We need to to update our data in 2 places
@@ -17,7 +21,7 @@ with open(file_path) as f:
 # second update the "Pound-for-Pound Top Rank" for women as: "Women's Pound-for-Pound Top Rank"
 
 count = 0
-for el in data:
+for el in rankings_data:
     if el['weight_class'] == "Pound-for-Pound Top Rank":
         count += 1
         if count == 1:
@@ -34,13 +38,13 @@ def run():
     Weightclass.objects.all().delete()
     RankingsAthlete.objects.all().delete()
 
-    for el in data:
+    for el in rankings_data:
         Weightclass.objects.create(weight_class=el['weight_class'])
 
     weightclasses = Weightclass.objects.all()
     weight_class_list = [(w.weight_class, w.id) for w in weightclasses]
 
-    for el in data:
+    for el in rankings_data:
         weight_class_id = list(filter(lambda x: x[0] == el['weight_class'], weight_class_list))[0][1]
 
         weight_class_obj = Weightclass.objects.only('id').get(id=weight_class_id)

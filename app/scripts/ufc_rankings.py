@@ -1,20 +1,22 @@
 from bs4 import BeautifulSoup
 import requests
+import os
 import json
+from django.conf import settings
 
-
+# file_path = os.path.join(settings.BASE_DIR, 'scripts/static/ufc_athletes_all.json')
+with open('static/ufc_athletes_all.json') as f:
+    all_athletes = json.load(f)
 
 """ Web scraping with Beautifulsoup to get the data and save as Json file """
-
 url = 'https://www.ufc.com/rankings'
 data = requests.get(url)
-default_image_src = "https://training.speedupcenter.com/img/avater.png"
+default_image_src = "https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png"
 
 html = BeautifulSoup(data.text, 'html.parser')
 content = html.select('.view-grouping')
 
 ufc_data = []
-
 
 for el in content[:-1]:
     temp_dict = {'fighters': []}
@@ -55,7 +57,7 @@ for el in content[:-1]:
     # Todo:  fighters
     table_tr = table[0].select('tr')
 
-    for tr in list(table_tr): 
+    for tr in list(table_tr):
         fighter_rank_string = tr.select('td.views-field-weight-class-rank')[0].get_text()
         fighter_rank = [int(s) for s in fighter_rank_string.split() if s.isdigit()][0]
         fighter_name = tr.select('a')[0].get_text()
@@ -66,7 +68,17 @@ for el in content[:-1]:
         fighter_nickname = None
         fighter_record = soup3.select('.tz-change-inner')[0].get_text()
         fighter_record = fighter_record[fighter_record.index("•") + 1:].strip()
-        fighter_img_src = default_image_src
+
+        athlete_detail = \
+            list(filter(lambda x: x['athlete_name'].lower() == fighter_name.lower(), all_athletes))
+
+        if athlete_detail:
+            print('--found-- ', athlete_detail[0]['athlete_name'])
+            default_image_src = athlete_detail[0]['img_src']
+        else:
+            print("not found : default image is being applied")
+
+
 
         try:
             fighter_nickname = soup3.select('.field-name-nickname')[0].get_text()
@@ -76,7 +88,7 @@ for el in content[:-1]:
 
         temp_dict['fighters'].append({'athlete_name': fighter_name,
                                       'rank': fighter_rank,
-                                      'img_src': fighter_img_src,
+                                      'img_src': default_image_src,
                                       'champion': False,
                                       'record': fighter_record,
                                       'nickname': fighter_nickname})
@@ -89,5 +101,3 @@ with open('./static/ufc_rankings.json', 'w') as f:
 
 """run: python ufc_rankings.py to generate a new updated file, and replace it to the static folder in the scripts 
 directory """
-
-
