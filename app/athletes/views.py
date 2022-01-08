@@ -4,8 +4,8 @@ from rest_framework.parsers import JSONParser
 from rest_framework import status
 from django.views.decorators.csrf import csrf_exempt
 
-from athletes.models import Weightclass, Athlete
-from athletes.serializers import WeightclassSerializer, AthleteSerializer
+from athletes.models import Weightclass, Athlete, Fighter
+from athletes.serializers import WeightclassSerializer, AthleteSerializer, FighterSerializer
 from rest_framework.decorators import api_view
 
 from django.core.files.storage import default_storage
@@ -100,6 +100,34 @@ def rankings_athlete_detail(request, pk):
     elif request.method == 'DELETE':
         athlete.delete()
         return JsonResponse({"message": "Athlete deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
+
+
+
+
+
+
+# TODO: RANKINGS FIGHERS APIS
+
+@csrf_exempt
+@api_view(['GET', 'POST'])
+def fighters_Api(request, page_number):
+    if request.method == 'GET':
+        fighters = Fighter.objects.all()
+        fighter_serializer = FighterSerializer(fighters, many=True)
+
+        fighters_to_list = fighter_serializer.data[page_number * 12 - 12: page_number * 12]
+
+        return JsonResponse(fighters_to_list, safe=False)
+
+    elif request.method == 'POST':
+        fighter_data = JSONParser().parse(request)
+        fighter_serializer = FighterSerializer(data=fighter_data)
+        if fighter_serializer.is_valid():
+            fighter_serializer.save()
+            return JsonResponse({"massage": "fighter data added successfully"}, safe=False)
+            
+        return JsonResponse({"massage": "Failed to add a fighter"}, safe=False)
+
 
 
 

@@ -10,6 +10,7 @@ urlpatterns = [
     path('api/weightclasses/<int:pk>', views.weight_class_detail),
     path('api/rankings-athletes', views.rankings_athlete_Api),
     path('api/rankings-athletes/<int:pk>', views.rankings_athlete_detail),
+    path('api/fighters/<int:page_number>', views.fighters_Api)
     # path('api/athletes/SaveFile', views.SaveFile)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

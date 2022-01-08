@@ -2,7 +2,7 @@ Live server 🚀: http://ec2-3-18-183-239.us-east-2.compute.amazonaws.com:8000/
 
 STEPS:
 
-1. use the docker-compose.prod.yml for the remote server
+1. use the docker-compose.remote.yml for the remote server (rename to docker-compose.yml)
 
 2. Connect to your EC2 server via SSH (Secure SHell)
    Open a bash terminal to the same location on your computer where you saved your private key file <ufc_django_docker.pem>
