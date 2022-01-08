@@ -32,6 +32,8 @@ STEPS:
     docker-compose exec web python manage.py migrate --noinput
     docker-compose exec web python manage.py runscript seed
 
+    (to unapply migrations run:  docker-compose exec web python manage.py migrate athletes zero )
+
 8. Retrieve an authentication token and authenticate your Docker client to your registry:
 
    aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 904425387266.dkr.ecr.us-east-2.amazonaws.com
