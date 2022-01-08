@@ -1,7 +1,7 @@
 STEPS TO FOLLOW: 
 ___________________________________________________________________
 
-1. use docker-compose.dev.yml to run locally 
+1. use docker-compose-local.yml to run locally (rename to docker-compose.yml)
 
 2. Create a virtual environment inside your folder, and activate it
         python -m venv venv
