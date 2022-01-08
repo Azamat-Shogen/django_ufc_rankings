@@ -36,7 +36,7 @@ def run():
     # Optional
     Athlete.objects.all().delete()
     Weightclass.objects.all().delete()
-    # Fighter.objects.all().delete()
+    Fighter.objects.all().delete()
 
 
     for el in rankings_data:
