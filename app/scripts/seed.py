@@ -34,9 +34,9 @@ for el in rankings_data:
 # TODO: initially insert all the data into the tables
 def run():
     # Optional
-    Fighter.objects.all().delete()
     Athlete.objects.all().delete()
     Weightclass.objects.all().delete()
+    #Fighter.objects.all().delete()
     
 
 
@@ -67,17 +67,17 @@ def run():
     # TODO: ADD ALL FIGHTERS
 
     all_fighters_count = 0
-    for fighter in all_athletes:
-        Fighter.objects.create(
-            athlete_name=fighter["athlete_name"],
-            image_src=fighter["img_src"],
-            record=fighter["record"],
-            nickname=fighter["nickname"],
-            weight_class=fighter["weight_class"]
-        )
-        all_fighters_count += 1
-        if all_fighters_count % 12 == 0:
-            print("Fighters added: ", all_fighters_count)
+    # for fighter in all_athletes:
+    #     Fighter.objects.create(
+    #         athlete_name=fighter["athlete_name"],
+    #         image_src=fighter["img_src"],
+    #         record=fighter["record"],
+    #         nickname=fighter["nickname"],
+    #         weight_class=fighter["weight_class"]
+    #     )
+    #     all_fighters_count += 1
+    #     if all_fighters_count % 12 == 0:
+    #         print("Fighters added: ", all_fighters_count)
     
     print("Total fighters: ", all_fighters_count)
     print("************ Completed ************")
