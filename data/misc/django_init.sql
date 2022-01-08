@@ -6,17 +6,6 @@ DROP DATABASE IF EXISTS ufc_rankings_db;
 
 CREATE DATABASE ufc_rankings_db;
 
-DROP TABLE IF EXISTS athletes_fighter;
-
-CREATE TABLE IF NOT EXISTS athletes_fighter(
-    id SERIAL PRIMARY KEY,
-    athlete_name VARCHAR (200) NOT NULL,
-    image_src VARCHAR(240),
-    record VARCHAR(200),
-    nickname VARCHAR(200),
-    weight_class VARCHAR(200)
-);
-
 
 \c ufc_rankings_db
 
