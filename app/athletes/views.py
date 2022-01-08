@@ -128,7 +128,59 @@ def fighters_Api(request, page_number):
             
         return JsonResponse({"massage": "Failed to add a fighter"}, safe=False)
 
+@csrf_exempt
+@api_view(['GET'])
+def fighters_men_Api(reqest, page_number):
+    if reqest.method == 'GET':
+        men_list = ["welterweight", "flyweight", "bantamweight", "featherweight", "lightweight", "middleweight", "light Heavyweight", "heavyweight"]
+        women_list = ["women's strawweight",  "women's bantamweight", "women's flyweight", "women's featherweight"]
 
+        fighters = Fighter.objects.all()
+        fighter_serializer = FighterSerializer(fighters, many=True)
+
+        filtered_list = list(filter(lambda x: x["weight_class"].lower() not in women_list, fighter_serializer.data))
+        fighters_to_list = filtered_list[page_number * 12 - 12: page_number * 12]
+
+        return JsonResponse(fighters_to_list, safe=False)
+
+
+@csrf_exempt
+@api_view(['GET'])
+def fighters_women_Api(reqest, page_number):
+    if reqest.method == 'GET':
+        women_list = ["women's strawweight",  "women's bantamweight", "women's flyweight", "women's featherweight"]
+        fighters = Fighter.objects.all()
+        fighter_serializer = FighterSerializer(fighters, many=True)
+
+        filtered_list = list(filter(lambda x: x["weight_class"].lower() in women_list, fighter_serializer.data))
+        fighters_to_list = filtered_list[page_number * 12 - 12: page_number * 12]
+
+        return JsonResponse(fighters_to_list, safe=False)
+
+
+
+@csrf_exempt
+@api_view(['PUT', 'GET', 'DELETE'])
+def fighter_detail(request, pk):
+    try:
+        fighter = Fighter.objects.get(pk=pk)
+    except Fighter.DoesNotExist:
+        return JsonResponse({"message": "Fighter does not exist"}, status=status.HTTP_404_NOT_FOUND)
+    
+    if request.method == 'GET':
+        fighter_serializer = FighterSerializer(fighter)
+        return JsonResponse(fighter_serializer.data)
+
+    elif request.method == 'PUT':
+        fighter_data = JSONParser().parse(request)
+        fighter_serializer = FighterSerializer(fighter, data=fighter_data)
+        if fighter_serializer.is_valid():
+            fighter_serializer.save()
+            return JsonResponse(fighter_serializer.data)
+        return JsonResponse(fighter_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    elif request.method == 'DELETE':
+        fighter.delete()
+        return JsonResponse({"message": "Fighter deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
 
 
 @csrf_exempt
