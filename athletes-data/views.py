@@ -1,7 +1,4 @@
 from django.shortcuts import render
-
-# Create your views here.
-from django.shortcuts import render
 from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser
 from rest_framework import status
@@ -192,4 +189,22 @@ def SaveFile(request):
     file_name = default_storage.save(file.name, file)
 
     return JsonResponse(file_name, safe=False)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
