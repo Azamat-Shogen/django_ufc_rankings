@@ -2,7 +2,7 @@ version: "3.8"
 services:
   web:
     build: ./app
-    image: 904425387266.dkr.ecr.us-east-2.amazonaws.com/ufc_docker_aws:ufc_docker_aws_web
+    image: 904425387266.dkr.ecr.us-east-2.amazonaws.com/django_ufc_aws:django_ufc_aws_web
     command: gunicorn ufc.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./app/:/usr/src/app/
@@ -16,11 +16,11 @@ services:
       - DB_HOST=ufc.ctj8rhrpn1nh.us-east-2.rds.amazonaws.com
       - DB_PORT=5432
       - DATABASE=postgres
-      - VIRTUAL_HOST=ec2-3-18-183-239.us-east-2.compute.amazonaws.com
+      - VIRTUAL_HOST=ec2-18-116-165-118.us-east-2.compute.amazonaws.com
       - VIRTUAL_PORT=8000
   nginx:
     build: ./nginx
-    image: 904425387266.dkr.ecr.us-east-2.amazonaws.com/ufc_docker_aws:ufc_docker_aws_nginx
+    image: 904425387266.dkr.ecr.us-east-2.amazonaws.com/django_ufc_aws:django_ufc_aws_nginx
     volumes:
       - static_volume:/usr/src/app/static
     ports:
