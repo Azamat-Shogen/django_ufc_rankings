@@ -83,7 +83,7 @@ def run():
     # Optional
     Athlete.objects.all().delete()
     Weightclass.objects.all().delete()
-    Fighter.objects.all().delete()
+    #Fighter.objects.all().delete()
 
     insert_fighters_data()
     insert_rankings_data()
