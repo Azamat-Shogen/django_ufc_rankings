@@ -1,4 +1,4 @@
-Live server 🚀: http://ec2-3-18-183-239.us-east-2.compute.amazonaws.com:8000/
+Live server 🚀: http://ec2-18-225-28-103.us-east-2.compute.amazonaws.com:8000/
 
 STEPS:
 
@@ -6,9 +6,10 @@ STEPS:
 
 2. Connect to your EC2 server via SSH (Secure SHell)
    Open a bash terminal to the same location on your computer where you saved your private key file <ufc_django_docker.pem>
+     (mine - Desktop/python)
    ssh -i <your private key filename> ubuntu@<your EC2 instance Elastic IP address>
 
-    ssh -i ufc_django_docker.pem ubuntu@3.18.183.239
+    ssh -i ufc-private-key.pem ubuntu@18.225.28.103
 
 3. IN THE SSH SESSION, check docker ps -a then stop and remove any running containers.
    This means to run docker ps -a at the command prompt that is opened when you have started an SSH session
@@ -36,7 +37,7 @@ STEPS:
 
 8. Retrieve an authentication token and authenticate your Docker client to your registry:
 
-   aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 904425387266.dkr.ecr.us-east-2.amazonaws.com
+aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 904425387266.dkr.ecr.us-east-2.amazonaws.com
 
 9. push to ECR 
    docker-compose push
@@ -47,7 +48,7 @@ version: "3.8"
 services:
   web:
     build: ./app
-    image: 904425387266.dkr.ecr.us-east-2.amazonaws.com/ufc_docker_aws:ufc_docker_aws_web
+    image: 904425387266.dkr.ecr.us-east-2.amazonaws.com/ufc_django_aws:ufc_django_aws_web
     command: gunicorn ufc.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./app/:/usr/src/app/
@@ -61,11 +62,11 @@ services:
       - DB_HOST=ufc.ctj8rhrpn1nh.us-east-2.rds.amazonaws.com
       - DB_PORT=5432
       - DATABASE=postgres
-      - VIRTUAL_HOST=ec2-3-18-183-239.us-east-2.compute.amazonaws.com
+      - VIRTUAL_HOST=ec2-18-225-28-103.us-east-2.compute.amazonaws.com
       - VIRTUAL_PORT=8000
   nginx:
     build: ./nginx
-    image: 904425387266.dkr.ecr.us-east-2.amazonaws.com/ufc_docker_aws:ufc_docker_aws_nginx
+    image: 904425387266.dkr.ecr.us-east-2.amazonaws.com/ufc_django_aws:ufc_django_aws_nginx
     volumes:
       - static_volume:/usr/src/app/static
     ports:
