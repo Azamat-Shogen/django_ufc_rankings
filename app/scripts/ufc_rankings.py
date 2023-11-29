@@ -36,10 +36,13 @@ for el in content[:-1]:
 
     soup2 = BeautifulSoup(data2.text, 'html.parser')
     champ_nickname = None
-    champ_record = soup2.select('.tz-change-inner')[0].get_text()
-    champ_record = champ_record[champ_record.index("•") + 1:].strip()
+    champ_record = soup2.select('.hero-profile__division-body')[0].get_text()
+
     champ_img = table_caption[0].select('img')[0]
     champ_img_src = champ_img['src']
+
+
+    print(champ_record)
 
     try:
         champ_nickname = soup2.select('.field-name-nickname')[0].get_text()
@@ -66,8 +69,7 @@ for el in content[:-1]:
         data3 = requests.get(fighter_url)
         soup3 = BeautifulSoup(data3.text, 'html.parser')
         fighter_nickname = None
-        fighter_record = soup3.select('.tz-change-inner')[0].get_text()
-        fighter_record = fighter_record[fighter_record.index("•") + 1:].strip()
+        fighter_record = soup2.select('.hero-profile__division-body')[0].get_text()
 
         athlete_detail = \
             list(filter(lambda x: x['athlete_name'].lower() == fighter_name.lower(), all_athletes))
