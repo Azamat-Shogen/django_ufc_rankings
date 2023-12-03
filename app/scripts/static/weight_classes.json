@@ -1,0 +1,54 @@
+[
+    {
+      "id": 14,
+      "weight_class": "Men's Pound-for-Pound"
+    },
+    {
+      "id": 15,
+      "weight_class": "Flyweight"
+    },
+    {
+      "id": 16,
+      "weight_class": "Bantamweight"
+    },
+    {
+      "id": 17,
+      "weight_class": "Featherweight"
+    },
+    {
+      "id": 18,
+      "weight_class": "Lightweight"
+    },
+    {
+      "id": 19,
+      "weight_class": "Welterweight"
+    },
+    {
+      "id": 20,
+      "weight_class": "Middleweight"
+    },
+    {
+      "id": 21,
+      "weight_class": "Light Heavyweight"
+    },
+    {
+      "id": 22,
+      "weight_class": "Heavyweight"
+    },
+    {
+      "id": 23,
+      "weight_class": "Women's Pound-for-Pound"
+    },
+    {
+      "id": 24,
+      "weight_class": "Women's Strawweight"
+    },
+    {
+      "id": 25,
+      "weight_class": "Women's Flyweight"
+    },
+    {
+      "id": 26,
+      "weight_class": "Women's Bantamweight"
+    }
+  ]
