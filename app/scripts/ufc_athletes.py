@@ -18,6 +18,7 @@ while True:
     list_items = data2.select(".l-flex__item")
 
     for athlete in list_items:
+        
         try:
             flip_card_front = athlete.select(".c-listing-athlete-flipcard__front")[0]
             fighter_name = flip_card_front.select(".c-listing-athlete__name")[0].get_text().strip()
@@ -37,11 +38,13 @@ while True:
                 "img_src": fighter_img_url,
                 "record": record,
                 "nickname": nickname,
-                "weight_class": weight_class
+                "weight_class": weight_class,
             })
 
         except:
             print("__empty_list_found skipping")
+
+        
 
     # todo: stop loop if no contents
     if not page_content:
@@ -49,6 +52,14 @@ while True:
         break
 
     num += 1
+
+
+# TODO: this is not needed in production:
+fighter_id = 1
+for fighter in ufc_data:
+    fighter['id'] = fighter_id
+    fighter_id += 1
+
 
 # Todo: save the data to a json file for later imports
 with open('./static/ufc_athletes_all.json', 'w') as f:
