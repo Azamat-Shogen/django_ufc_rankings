@@ -6,7 +6,8 @@
         "champion": true,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 1
     },
     {
         "athlete_name": "Islam Makhachev",
@@ -15,7 +16,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 2
     },
     {
         "athlete_name": "Jon Jones",
@@ -24,7 +26,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 3
     },
     {
         "athlete_name": "Alexander Volkanovski",
@@ -33,7 +36,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 4
     },
     {
         "athlete_name": "Leon Edwards",
@@ -42,7 +46,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 5
     },
     {
         "athlete_name": "Alex Pereira",
@@ -51,7 +56,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 6
     },
     {
         "athlete_name": "Charles Oliveira",
@@ -60,7 +66,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 7
     },
     {
         "athlete_name": "Sean O'Malley",
@@ -69,7 +76,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 8
     },
     {
         "athlete_name": "Sean Strickland",
@@ -78,7 +86,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 9
     },
     {
         "athlete_name": "Israel Adesanya",
@@ -87,7 +96,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 10
     },
     {
         "athlete_name": "Alexandre Pantoja",
@@ -96,7 +106,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 11
     },
     {
         "athlete_name": "Aljamain Sterling",
@@ -105,7 +116,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 12
     },
     {
         "athlete_name": "Tom Aspinall",
@@ -114,7 +126,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 13
     },
     {
         "athlete_name": "Max Holloway",
@@ -123,7 +136,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 14
     },
     {
         "athlete_name": "Kamaru Usman",
@@ -132,7 +146,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 15
     },
     {
         "athlete_name": "Ji\u0159\u00ed Proch\u00e1zka",
@@ -141,7 +156,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 14
+        "weight_class": 14,
+        "id": 16
     },
     {
         "athlete_name": "Alexandre Pantoja",
@@ -150,7 +166,8 @@
         "champion": true,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 17
     },
     {
         "athlete_name": "Brandon Moreno",
@@ -159,7 +176,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 18
     },
     {
         "athlete_name": "Deiveson Figueiredo",
@@ -168,7 +186,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 19
     },
     {
         "athlete_name": "Amir Albazi",
@@ -177,7 +196,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 20
     },
     {
         "athlete_name": "Brandon Royval",
@@ -186,7 +206,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 21
     },
     {
         "athlete_name": "Kai Kara-France",
@@ -195,7 +216,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 22
     },
     {
         "athlete_name": "Matheus Nicolau",
@@ -204,7 +226,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 23
     },
     {
         "athlete_name": "Alex Perez",
@@ -213,7 +236,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 24
     },
     {
         "athlete_name": "Manel Kape",
@@ -222,7 +246,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 25
     },
     {
         "athlete_name": "Matt Schnell",
@@ -231,7 +256,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 26
     },
     {
         "athlete_name": "Muhammad Mokaev",
@@ -240,7 +266,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 27
     },
     {
         "athlete_name": "Tim Elliott",
@@ -249,7 +276,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 28
     },
     {
         "athlete_name": "Sumudaerji",
@@ -258,7 +286,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 29
     },
     {
         "athlete_name": "Steve Erceg",
@@ -267,7 +296,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 30
     },
     {
         "athlete_name": "Tagir Ulanbekov",
@@ -276,7 +306,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 31
     },
     {
         "athlete_name": "David Dvorak",
@@ -285,7 +316,8 @@
         "champion": false,
         "record": "26-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 15
+        "weight_class": 15,
+        "id": 32
     },
     {
         "athlete_name": "Sean O'Malley",
@@ -294,7 +326,8 @@
         "champion": true,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 33
     },
     {
         "athlete_name": "Aljamain Sterling",
@@ -303,7 +336,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 34
     },
     {
         "athlete_name": "Merab Dvalishvili",
@@ -312,7 +346,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 35
     },
     {
         "athlete_name": "Henry Cejudo",
@@ -321,7 +356,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 36
     },
     {
         "athlete_name": "Cory Sandhagen",
@@ -330,7 +366,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 37
     },
     {
         "athlete_name": "Petr Yan",
@@ -339,7 +376,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 38
     },
     {
         "athlete_name": "Marlon Vera",
@@ -348,7 +386,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 39
     },
     {
         "athlete_name": "Song Yadong",
@@ -357,7 +396,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 40
     },
     {
         "athlete_name": "Rob Font",
@@ -366,7 +406,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 41
     },
     {
         "athlete_name": "Dominick Cruz",
@@ -375,7 +416,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 42
     },
     {
         "athlete_name": "Pedro Munhoz",
@@ -384,7 +426,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 43
     },
     {
         "athlete_name": "Jonathan Martinez",
@@ -393,7 +436,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 44
     },
     {
         "athlete_name": "Umar Nurmagomedov",
@@ -402,7 +446,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 45
     },
     {
         "athlete_name": "Ricky Simon",
@@ -411,7 +456,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 46
     },
     {
         "athlete_name": "Chris Gutierrez",
@@ -420,7 +466,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 47
     },
     {
         "athlete_name": "Said Nurmagomedov",
@@ -429,7 +476,8 @@
         "champion": false,
         "record": "17-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 16
+        "weight_class": 16,
+        "id": 48
     },
     {
         "athlete_name": "Alexander Volkanovski",
@@ -438,7 +486,8 @@
         "champion": true,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 49
     },
     {
         "athlete_name": "Max Holloway",
@@ -447,7 +496,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 50
     },
     {
         "athlete_name": "Yair Rodriguez",
@@ -456,7 +506,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 51
     },
     {
         "athlete_name": "Brian Ortega",
@@ -465,7 +516,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 52
     },
     {
         "athlete_name": "Arnold Allen",
@@ -474,7 +526,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 53
     },
     {
         "athlete_name": "Ilia Topuria",
@@ -483,7 +536,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 54
     },
     {
         "athlete_name": "Josh Emmett",
@@ -492,7 +546,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 55
     },
     {
         "athlete_name": "Calvin Kattar",
@@ -501,7 +556,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 56
     },
     {
         "athlete_name": "Giga Chikadze",
@@ -510,7 +566,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 57
     },
     {
         "athlete_name": "Movsar Evloev",
@@ -519,7 +576,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 58
     },
     {
         "athlete_name": "Bryce Mitchell",
@@ -528,7 +586,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 59
     },
     {
         "athlete_name": "Edson Barboza",
@@ -537,7 +596,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 60
     },
     {
         "athlete_name": "Sodiq Yusuff",
@@ -546,7 +606,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 61
     },
     {
         "athlete_name": "Dan Ige",
@@ -555,7 +616,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 62
     },
     {
         "athlete_name": "Lerone Murphy",
@@ -564,7 +626,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 63
     },
     {
         "athlete_name": "Alex Caceres",
@@ -573,7 +636,8 @@
         "champion": false,
         "record": "26-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 17
+        "weight_class": 17,
+        "id": 64
     },
     {
         "athlete_name": "Islam Makhachev",
@@ -582,7 +646,8 @@
         "champion": true,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 65
     },
     {
         "athlete_name": "Charles Oliveira",
@@ -591,7 +656,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 66
     },
     {
         "athlete_name": "Justin Gaethje",
@@ -600,7 +666,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 67
     },
     {
         "athlete_name": "Dustin Poirier",
@@ -609,7 +676,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 68
     },
     {
         "athlete_name": "Beneil Dariush",
@@ -618,7 +686,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 69
     },
     {
         "athlete_name": "Michael Chandler",
@@ -627,7 +696,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 70
     },
     {
         "athlete_name": "Mateusz Gamrot",
@@ -636,7 +706,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 71
     },
     {
         "athlete_name": "Rafael Fiziev",
@@ -645,7 +716,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 72
     },
     {
         "athlete_name": "Arman Tsarukyan",
@@ -654,7 +726,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 73
     },
     {
         "athlete_name": "Dan Hooker",
@@ -663,7 +736,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 74
     },
     {
         "athlete_name": "Rafael Dos Anjos",
@@ -672,7 +746,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 75
     },
     {
         "athlete_name": "Beno\u00eet Saint Denis",
@@ -681,7 +756,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 76
     },
     {
         "athlete_name": "Jalin Turner",
@@ -690,7 +766,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 77
     },
     {
         "athlete_name": "Bobby Green",
@@ -699,7 +776,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 78
     },
     {
         "athlete_name": "Renato Moicano",
@@ -708,7 +786,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 79
     },
     {
         "athlete_name": "Drew Dober",
@@ -717,7 +796,8 @@
         "champion": false,
         "record": "25-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 18
+        "weight_class": 18,
+        "id": 80
     },
     {
         "athlete_name": "Leon Edwards",
@@ -726,7 +806,8 @@
         "champion": true,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 81
     },
     {
         "athlete_name": "Kamaru Usman",
@@ -735,7 +816,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 82
     },
     {
         "athlete_name": "Belal Muhammad",
@@ -744,7 +826,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 83
     },
     {
         "athlete_name": "Colby Covington",
@@ -753,7 +836,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 84
     },
     {
         "athlete_name": "Gilbert Burns",
@@ -762,7 +846,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 85
     },
     {
         "athlete_name": "Shavkat Rakhmonov",
@@ -771,7 +856,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 86
     },
     {
         "athlete_name": "Stephen Thompson",
@@ -780,7 +866,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 87
     },
     {
         "athlete_name": "Geoff Neal",
@@ -789,7 +876,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 88
     },
     {
         "athlete_name": "Vicente Luque",
@@ -798,7 +886,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 89
     },
     {
         "athlete_name": "Sean Brady",
@@ -807,7 +896,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 90
     },
     {
         "athlete_name": "Ian Machado Garry",
@@ -816,7 +906,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 91
     },
     {
         "athlete_name": "Jack Della Maddalena",
@@ -825,7 +916,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 92
     },
     {
         "athlete_name": "Kevin Holland",
@@ -834,7 +926,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 93
     },
     {
         "athlete_name": "Neil Magny",
@@ -843,7 +936,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 94
     },
     {
         "athlete_name": "Michael Chiesa",
@@ -852,7 +946,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 95
     },
     {
         "athlete_name": "Rinat Fakhretdinov",
@@ -861,7 +956,8 @@
         "champion": false,
         "record": "21-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 19
+        "weight_class": 19,
+        "id": 96
     },
     {
         "athlete_name": "Sean Strickland",
@@ -870,7 +966,8 @@
         "champion": true,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 97
     },
     {
         "athlete_name": "Israel Adesanya",
@@ -879,7 +976,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 98
     },
     {
         "athlete_name": "Dricus Du Plessis",
@@ -888,7 +986,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 99
     },
     {
         "athlete_name": "Robert Whittaker",
@@ -897,7 +996,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 100
     },
     {
         "athlete_name": "Jared Cannonier",
@@ -906,7 +1006,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 101
     },
     {
         "athlete_name": "Marvin Vettori",
@@ -915,7 +1016,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 102
     },
     {
         "athlete_name": "Paulo Costa",
@@ -924,7 +1026,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 103
     },
     {
         "athlete_name": "Roman Dolidze",
@@ -933,7 +1036,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 104
     },
     {
         "athlete_name": "Brendan Allen",
@@ -942,7 +1046,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 105
     },
     {
         "athlete_name": "Khamzat Chimaev",
@@ -951,7 +1056,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 106
     },
     {
         "athlete_name": "Jack Hermansson",
@@ -960,7 +1066,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 107
     },
     {
         "athlete_name": "Kelvin Gastelum",
@@ -969,7 +1076,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 108
     },
     {
         "athlete_name": "Nassourdine Imavov",
@@ -978,7 +1086,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 109
     },
     {
         "athlete_name": "Paul Craig",
@@ -987,7 +1096,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 110
     },
     {
         "athlete_name": "Chris Curtis",
@@ -996,7 +1106,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 111
     },
     {
         "athlete_name": "Anthony Hernandez",
@@ -1005,7 +1116,8 @@
         "champion": false,
         "record": "28-5-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 20
+        "weight_class": 20,
+        "id": 112
     },
     {
         "athlete_name": "Alex Pereira",
@@ -1014,7 +1126,8 @@
         "champion": true,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 113
     },
     {
         "athlete_name": "Jamahal Hill",
@@ -1023,7 +1136,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 114
     },
     {
         "athlete_name": "Ji\u0159\u00ed Proch\u00e1zka",
@@ -1032,7 +1146,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 115
     },
     {
         "athlete_name": "Magomed Ankalaev",
@@ -1041,7 +1156,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 116
     },
     {
         "athlete_name": "Jan B\u0142achowicz",
@@ -1050,7 +1166,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 117
     },
     {
         "athlete_name": "Aleksandar Raki\u0107",
@@ -1059,7 +1176,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 118
     },
     {
         "athlete_name": "Nikita Krylov",
@@ -1068,7 +1186,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 119
     },
     {
         "athlete_name": "Johnny Walker",
@@ -1077,7 +1196,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 120
     },
     {
         "athlete_name": "Anthony Smith",
@@ -1086,7 +1206,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 121
     },
     {
         "athlete_name": "Volkan Oezdemir",
@@ -1095,7 +1216,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 122
     },
     {
         "athlete_name": "Ryan Spann",
@@ -1104,7 +1226,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 123
     },
     {
         "athlete_name": "Khalil Rountree Jr.",
@@ -1113,7 +1236,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 124
     },
     {
         "athlete_name": "Azamat Murzakanov",
@@ -1122,7 +1246,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 125
     },
     {
         "athlete_name": "Dominick Reyes",
@@ -1131,7 +1256,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 126
     },
     {
         "athlete_name": "Alonzo Menifield",
@@ -1140,7 +1266,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 127
     },
     {
         "athlete_name": "Dustin Jacoby",
@@ -1149,7 +1276,8 @@
         "champion": false,
         "record": "9-2-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 21
+        "weight_class": 21,
+        "id": 128
     },
     {
         "athlete_name": "Jon Jones",
@@ -1158,7 +1286,8 @@
         "champion": true,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 129
     },
     {
         "athlete_name": "Tom Aspinall",
@@ -1167,7 +1296,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 130
     },
     {
         "athlete_name": "Ciryl Gane",
@@ -1176,7 +1306,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 131
     },
     {
         "athlete_name": "Sergei Pavlovich",
@@ -1185,7 +1316,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 132
     },
     {
         "athlete_name": "Stipe Miocic",
@@ -1194,7 +1326,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 133
     },
     {
         "athlete_name": "Curtis Blaydes",
@@ -1203,7 +1336,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 134
     },
     {
         "athlete_name": "Alexander Volkov",
@@ -1212,7 +1346,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 135
     },
     {
         "athlete_name": "Jailton Almeida",
@@ -1221,7 +1356,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 136
     },
     {
         "athlete_name": "Serghei Spivac",
@@ -1230,7 +1366,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 137
     },
     {
         "athlete_name": "Tai Tuivasa",
@@ -1239,7 +1376,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 138
     },
     {
         "athlete_name": "Marcin Tybura",
@@ -1248,7 +1386,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 139
     },
     {
         "athlete_name": "Derrick Lewis",
@@ -1257,7 +1396,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 140
     },
     {
         "athlete_name": "Jairzinho Rozenstruik",
@@ -1266,7 +1406,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 141
     },
     {
         "athlete_name": "Alexandr Romanov",
@@ -1275,7 +1416,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 142
     },
     {
         "athlete_name": "Rodrigo Nascimento",
@@ -1284,7 +1426,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 143
     },
     {
         "athlete_name": "Marcos Rogerio de Lima",
@@ -1293,7 +1436,8 @@
         "champion": false,
         "record": "27-1-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 22
+        "weight_class": 22,
+        "id": 144
     },
     {
         "athlete_name": "Alexa Grasso",
@@ -1302,7 +1446,8 @@
         "champion": true,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 145
     },
     {
         "athlete_name": "Alexa Grasso",
@@ -1311,7 +1456,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 146
     },
     {
         "athlete_name": "Zhang Weili",
@@ -1320,7 +1466,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 147
     },
     {
         "athlete_name": "Valentina Shevchenko",
@@ -1329,7 +1476,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 148
     },
     {
         "athlete_name": "Julianna Pe\u00f1a",
@@ -1338,7 +1486,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 149
     },
     {
         "athlete_name": "Erin Blanchfield",
@@ -1347,7 +1496,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 150
     },
     {
         "athlete_name": "Manon Fiorot",
@@ -1356,7 +1506,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 151
     },
     {
         "athlete_name": "Rose Namajunas",
@@ -1365,7 +1516,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 152
     },
     {
         "athlete_name": "Carla Esparza",
@@ -1374,7 +1526,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 153
     },
     {
         "athlete_name": "Yan Xiaonan",
@@ -1383,7 +1536,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 154
     },
     {
         "athlete_name": "Tatiana Suarez",
@@ -1392,7 +1546,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 155
     },
     {
         "athlete_name": "J\u00e9ssica Andrade",
@@ -1401,7 +1556,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 156
     },
     {
         "athlete_name": "Raquel Pennington",
@@ -1410,7 +1566,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 157
     },
     {
         "athlete_name": "Amanda Lemos",
@@ -1419,7 +1576,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 158
     },
     {
         "athlete_name": "Ketlen Vieira",
@@ -1428,7 +1586,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 159
     },
     {
         "athlete_name": "Irene Aldana",
@@ -1437,7 +1596,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 23
+        "weight_class": 23,
+        "id": 160
     },
     {
         "athlete_name": "Zhang Weili",
@@ -1446,7 +1606,8 @@
         "champion": true,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 161
     },
     {
         "athlete_name": "Carla Esparza",
@@ -1455,7 +1616,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 162
     },
     {
         "athlete_name": "Yan Xiaonan",
@@ -1464,7 +1626,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 163
     },
     {
         "athlete_name": "Tatiana Suarez",
@@ -1473,7 +1636,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 164
     },
     {
         "athlete_name": "Amanda Lemos",
@@ -1482,7 +1646,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 165
     },
     {
         "athlete_name": "J\u00e9ssica Andrade",
@@ -1491,7 +1656,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 166
     },
     {
         "athlete_name": "Virna Jandiroba",
@@ -1500,7 +1666,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 167
     },
     {
         "athlete_name": "Marina Rodriguez",
@@ -1509,7 +1676,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 168
     },
     {
         "athlete_name": "Mackenzie Dern",
@@ -1518,7 +1686,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 169
     },
     {
         "athlete_name": "Amanda Ribas",
@@ -1527,7 +1696,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 170
     },
     {
         "athlete_name": "Luana Pinheiro",
@@ -1536,7 +1706,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 171
     },
     {
         "athlete_name": "Loopy Godinez",
@@ -1545,7 +1716,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 172
     },
     {
         "athlete_name": "Tabatha Ricci",
@@ -1554,7 +1726,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 173
     },
     {
         "athlete_name": "Angela Hill",
@@ -1563,7 +1736,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 174
     },
     {
         "athlete_name": "Karolina Kowalkiewicz",
@@ -1572,7 +1746,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 175
     },
     {
         "athlete_name": "Michelle Waterson-Gomez",
@@ -1581,7 +1756,8 @@
         "champion": false,
         "record": "24-3-0 (W-L-D)",
         "nickname": null,
-        "weight_class": 24
+        "weight_class": 24,
+        "id": 176
     },
     {
         "athlete_name": "Alexa Grasso",
@@ -1590,7 +1766,8 @@
         "champion": true,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 177
     },
     {
         "athlete_name": "Valentina Shevchenko",
@@ -1599,7 +1776,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 178
     },
     {
         "athlete_name": "Erin Blanchfield",
@@ -1608,7 +1786,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 179
     },
     {
         "athlete_name": "Manon Fiorot",
@@ -1617,7 +1796,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 180
     },
     {
         "athlete_name": "Katlyn Chookagian",
@@ -1626,7 +1806,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 181
     },
     {
         "athlete_name": "J\u00e9ssica Andrade",
@@ -1635,7 +1816,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 182
     },
     {
         "athlete_name": "Lauren Murphy",
@@ -1644,7 +1826,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 183
     },
     {
         "athlete_name": "Maycee Barber",
@@ -1653,7 +1836,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 184
     },
     {
         "athlete_name": "Viviane Ara\u00fajo",
@@ -1662,7 +1846,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 185
     },
     {
         "athlete_name": "Amanda Ribas",
@@ -1671,7 +1856,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 186
     },
     {
         "athlete_name": "Tracy Cortez",
@@ -1680,7 +1866,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 187
     },
     {
         "athlete_name": "Natalia Silva",
@@ -1689,7 +1876,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 188
     },
     {
         "athlete_name": "Casey O'Neill",
@@ -1698,7 +1886,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 189
     },
     {
         "athlete_name": "Karine Silva",
@@ -1707,7 +1896,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 190
     },
     {
         "athlete_name": "Andrea Lee",
@@ -1716,7 +1906,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 191
     },
     {
         "athlete_name": "Joanne Wood",
@@ -1725,16 +1916,18 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 25
+        "weight_class": 25,
+        "id": 192
     },
     {
         "athlete_name": "None",
         "rank": 0,
-        "img_src": "https://dmxg5wxfqgb4u.cloudfront.net/styles/teaser/s3/2023-03/WOOD_JOANNE_03-18.png?h=a30e7339&itok=SfxPXfg2",
+        "img_src": "https://www.ufc.com/themes/custom/ufc/assets/img/no-profile-image.png",
         "champion": true,
         "record": "0",
         "nickname": "None",
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 193
     },
     {
         "athlete_name": "Julianna Pe\u00f1a",
@@ -1743,7 +1936,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 194
     },
     {
         "athlete_name": "Raquel Pennington",
@@ -1752,7 +1946,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 195
     },
     {
         "athlete_name": "Mayra Bueno Silva",
@@ -1761,7 +1956,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 196
     },
     {
         "athlete_name": "Ketlen Vieira",
@@ -1770,7 +1966,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 197
     },
     {
         "athlete_name": "Holly Holm",
@@ -1779,7 +1976,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 198
     },
     {
         "athlete_name": "Irene Aldana",
@@ -1788,7 +1986,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 199
     },
     {
         "athlete_name": "Pannie Kianzad",
@@ -1797,7 +1996,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 200
     },
     {
         "athlete_name": "Yana Santos",
@@ -1806,7 +2006,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 201
     },
     {
         "athlete_name": "Karol Rosa",
@@ -1815,7 +2016,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 202
     },
     {
         "athlete_name": "Macy Chiasson",
@@ -1824,7 +2026,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 203
     },
     {
         "athlete_name": "Norma Dumont",
@@ -1833,7 +2036,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 204
     },
     {
         "athlete_name": "Miesha Tate",
@@ -1842,7 +2046,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 205
     },
     {
         "athlete_name": "Julia Avila",
@@ -1851,7 +2056,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 206
     },
     {
         "athlete_name": "Josiane Nunes",
@@ -1860,7 +2066,8 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 207
     },
     {
         "athlete_name": "Chelsea Chandler",
@@ -1869,6 +2076,7 @@
         "champion": false,
         "record": "16-3-1 (W-L-D)",
         "nickname": null,
-        "weight_class": 26
+        "weight_class": 26,
+        "id": 208
     }
 ]
